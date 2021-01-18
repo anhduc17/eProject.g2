@@ -1,0 +1,12 @@
+[
+    {"id":"c01","name":"Brimnes","pic":"ikea_brimnes.png","price":"$115","brand":"Ikea","description":"102"},
+    {"id":"c02","name":"Hauga","pic":"ikea_hauga.png","price":"$129","brand":"Ikea"},
+    {"id":"c03","name":"Ravaror","pic":"ikea_ravaror.png","price":"$99","brand":"Ikea"},
+    {"id":"c04","name":"Rakkestad","pic":"ikea_rakkestad.png","price":"$129","brand":"Ikea"},
+    {"id":"c05","name":"Sundlandet","pic":"ikea_sundlandet.png","price":"179","brand":"Ikea"},
+    {"id":"c06","name":"Kleppstad","pic":"ikea_kleppstad.png","price":"$75","brand":"Ikea"},
+    {"id":"c07","name":"Nordkisa","pic":"ikea_nordkisa.png","price":"$229","brand":"Ikea"},
+    {"id":"c08","name":"Songesand","pic":"ikea_songesand.png","price":"$179","brand":"Ikea"},
+    {"id":"c09","name":"Ellum White High Gloss Sliding Wardrobe","pic":"dunelm_ellum_white.jpg","price":"$311","brand":"Dunelm"},
+    {"id":"c10","name":"Toulouse Ivory Triple Wardrobe","pic":"dunelm_toulouse_ivory.jpg","price":"$599","brand":"Dunelm"}
+]

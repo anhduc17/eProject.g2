@@ -1,0 +1,35 @@
+.map-section{
+    background: #f5f5f5;
+    padding-top: 12px;
+}
+
+.panel-title{
+    font-weight: bold;
+    text-align: center;
+}
+
+.list-group-item{
+    border-color: transparent;
+    padding: 6px 12px;
+    margin-bottom: 15px;
+}
+
+.form-horizontal .control-label{
+    text-align: left;
+}
+
+.map-container{
+    overflow:hidden;
+    margin-top: 15px;
+    margin-bottom: 90px;
+    position:relative;
+    height:0;
+    }
+
+.map-container iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+}
