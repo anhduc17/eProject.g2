@@ -99,20 +99,17 @@
         <div class="page-header">
             <h3><b>Products</b></h3>
         </div>
-
         <div class="row" id="products">
-
             <div class="col-sm-6 col-md-4 divImage" data-id="abc">
                 <img src="image/shop/dunelm_ellum_white.jpg" alt="" class="productImage">
             </div>
-    
+        </div>
+        <div class="pageButtons" id="pages" style="text-align: center;">
+            <input type="button" value="1">
+            <input type="button" value="2">
+            <input type="button" value="3">
         </div>
     </div>
-
-    
-
-    
-
 
     <!-- Footer Section Begin -->
     <footer class="footer-section">
@@ -128,7 +125,7 @@
                 </div>
 
                 <div class="col-md-4">
-                    <a href="#shop" style="color: white;">Shop</a>
+                    <a href="shop.html" style="color: white;">Shop</a>
                 </div>
             </div>
 
@@ -224,29 +221,33 @@
             $('#myModal').modal('show');
         })
 
+        $("input[type=button]").click(function () {
+                let p = $(this).val();
+                displayImages(data, p);
+            });
     });
 
-    function displayImages(items,page) {
-        let s = ``;
-        let start = (page - 1)*6;
-        let end = start + 6;
-        $.each(items, function (k, v) {
-            if(k >= start && k < end){
-                s += `<div class="col-sm-6 col-md-4 divImage" data-id="${v.id}">
+    function displayImages(items, page) {
+            let s = ``;
+            let start = (page - 1) * 9;
+            let end = start + 9;
+            $.each(items, function (k, v) {
+                if (k >= start && k < end) {
+                    s += `<div class="col-sm-6 col-md-4 divImage" data-id="${v.id}">
                         <img src="image/shop/${v.pic}" alt="" class="productImage">
                         <p>
                             Name: ${v.name} <br>
                             Price: ${v.price}
                         </p> 
                     </div> `;
-            }
-            
+                }
 
-        });
 
-        $("#products").html(s);
+            });
 
-    }
+            $("#products").html(s);
+
+        }
 
     function displayImages2(items) {
         let s = ``;

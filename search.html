@@ -61,7 +61,7 @@
                     <!-- Navbar Links -->
                     <ul id="menu">
                         <li><a href="home.html">Home</a></li>
-                        <li><a href="search.html">Shop</a></li>
+                        <li><a href="shop.html">Shop</a></li>
                         <li><a href="search.html">Search</a></li>
                         <li><a href="compare.html">Comparison</a></li>
                         <li><a href="ContactUs.html">Contact</a></li>
@@ -81,7 +81,7 @@
             <div class="overlay-menu">
                 <ul id="menu">
                     <li><a href="home.html">Home</a></li>
-                    <li><a href="search.html">Shop</a></li>
+                    <li><a href="shop.html">Shop</a></li>
                     <li><a href="search.html">Search</a></li>
                     <li><a href="compare.html">Comparison</a></li>
                     <li><a href="ContactUs.html">Contact</a></li>
@@ -110,11 +110,6 @@
                     <div class="col-sm-6 col-md-4 divImage" data-id="abc">
                         <img src="image/shop/dunelm_ellum_white.jpg" alt="" class="productImage">
                     </div>
-                </div>
-                <div class="pageButton" id="pageButtons" style="text-align: center;">
-                    <input type="button" id="page1" value="1">
-                    <input type="button" id="page2" value="2">
-                    <input type="button" id="page3" value="3">
                 </div>
             </div>
             <div class="col-md-3 col-md-pull-9 col-xs-12">
@@ -161,7 +156,7 @@
                 </div>
 
                 <div class="col-md-4">
-                    <a href="#shop" style="color: white;">Shop</a>
+                    <a href="shop.html" style="color: white;">Shop</a>
                 </div>
             </div>
 
@@ -278,35 +273,10 @@
                 displayImages(subdata);
             })
 
-            $("input[type=button]").click(function () {
-                let p = $(this).val();
-                displayImages(data, p);
-            });
+            
         });
 
-        function displayImages(items, page) {
-            let s = ``;
-            let start = (page - 1) * 6;
-            let end = start + 6;
-            $.each(items, function (k, v) {
-                if (k >= start && k < end) {
-                    s += `<div class="col-sm-6 col-md-4 divImage" data-id="${v.id}">
-                        <img src="image/shop/${v.pic}" alt="" class="productImage">
-                        <p>
-                            Name: ${v.name} <br>
-                            Price: ${v.price}
-                        </p> 
-                    </div> `;
-                }
-
-
-            });
-
-            $("#products").html(s);
-
-        }
-
-        function displayImages2(items) {
+        function displayImages(items) {
             let s = ``;
 
             $.each(items, function (k, v) {
