@@ -183,10 +183,11 @@
                                     style="width: 100%;" alt=""></div>
                         </div>
                         <div class="col-md-6">
-                            <h3 class="text-black-1">Product Name </h3>
+                            <h3 class="text-black-1">Product Name </h3><br><br>
                             <h6 class="brand-name-2">Product Price</h6>
                             <h6 class="brand-name-3">Product Brand </h6>
-                            <div role="tabpanel" class="tab-pane active" id="description">
+                            <div role="tabpanel" class="tab-pane active" id="description"><br>
+                                <b>Production Details:</b><br><br>
                                 <p>There are many variations of passages of Lorem Ipsum available, but the majo Rity
                                     have be suffered alteration in some form, by injected humou or randomis Rity
                                     have be suffered alteration in some form, by injected humou or randomis words
@@ -210,7 +211,7 @@
             // console.log(items);
             data = items;
 
-            displayImages(data,1);
+            displayImages(data, 1);
 
         });
 
@@ -223,51 +224,33 @@
         })
 
         $("input[type=button]").click(function () {
-                let p = $(this).val();
-                displayImages(data, p);
-            });
+            let p = $(this).val();
+            displayImages(data, p);
+        });
     });
 
     function displayImages(items, page) {
-            let s = ``;
-            let start = (page - 1) * 9;
-            let end = start + 9;
-            $.each(items, function (k, v) {
-                if (k >= start && k < end) {
-                    s += `<div class="col-sm-6 col-md-4 divImage" data-id="${v.id}">
-                        <img src="image/shop/${v.pic}" alt="" class="productImage">
-                        <p>
-                            Name: ${v.name} <br>
-                            Price: ${v.price}
-                        </p> 
-                    </div> `;
-                }
-
-
-            });
-
-            $("#products").html(s);
-
-        }
-
-    function displayImages2(items) {
         let s = ``;
-        
+        let start = (page - 1) * 9;
+        let end = start + 9;
         $.each(items, function (k, v) {
-
-            s += `<div class="col-sm-6 col-md-4 divImage" data-id="${v.id}">
+            if (k >= start && k < end) {
+                s += `<div class="col-sm-6 col-md-4 divImage" data-id="${v.id}">
                         <img src="image/shop/${v.pic}" alt="" class="productImage">
                         <p>
                             Name: ${v.name} <br>
                             Price: ${v.price}
                         </p> 
                     </div> `;
+            }
+
 
         });
 
         $("#products").html(s);
 
     }
+
 
     function setModal(product) {
         let x = `
@@ -276,11 +259,12 @@
                     <div class="imgs-zoom-area"><img id="zoom_03" src="image/shop/${product.pic}"   style="width: 100%;" alt=""></div>
                 </div>
                 <div class="col-md-6">
-                    <h3 class="text-black-1">${product.name}</h3>
-
-                    <h6 class="brand-name-2">${product.price}</h6>
-                    <h6 class="brand-name-3">${product.brand.toUpperCase()}</h6>
+                    <h3 class="text-black-1"><b>${product.name}</b></h3>
+                    <br><br>
+                    <h6 class="brand-name-2"><b>Price:</b> ${product.price}</h6>
+                    <h6 class="brand-name-3"><b>Brand:</b> ${product.brand.toUpperCase()}</h6> <br>
                     <div role="tabpanel" class="tab-pane active" id="description">
+                        <h5><b>Production Details:</b></h5><br><br>
                         <p>${product.description}</p>
                     </div>
                 </div>
