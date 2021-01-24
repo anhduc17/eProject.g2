@@ -14,9 +14,10 @@ Project title: Smart-store
 
  Nguyen Truc Nhan (NhanNTTS2010001@fpt.edu.vn)Student1283035
 
- Nguyen Dinh Gia Binh (BinhNDGTS2010007@fpt.edu.vn)Student1283037 
+ Nguyen Dinh Gia Binh (BinhNDGTS2010007@fpt.edu.vn)Student1283037
  
  Hoang Anh Duc (DucHATS2010052@fpt.edu.vn)Student1283038
+ 
 ============================
 
 eProject documentation at : https://github.com/anhduc17/eProject.g2/tree/main/documentation
