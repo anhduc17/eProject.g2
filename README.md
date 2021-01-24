@@ -1,5 +1,5 @@
 # eProject.g2
-https://anhduc17.github.io/eProject.g2/home.html
+
 T1.2010.E0-eProject-Group-2
 
 Batch no.: T1.2010.E0
