@@ -24,7 +24,7 @@ eProject documentation at : https://github.com/anhduc17/eProject.g2/tree/main/do
 
 ============================
 
-eProject published at https://github.com/anhduc17/eProject.g2
+eProject published at https://anhduc17.github.io/eProject.g2/home.html
 
 ============================
 
